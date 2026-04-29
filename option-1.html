@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Saba Nujoom Saloon | Gents Salon</title>
+<meta name="description" content="Saba Nujoom Saloon is a neighbourhood gents salon in Ras Al Khaimah for haircuts, beard work, and grooming, done well and on time." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  :root { --bg: #0d0c0a; --bg-2: #161410; --gold: #d8b46c; --text: #f6f1e6; --muted: #9c9384; --line: rgba(246, 241, 230, 0.1); }
+  html, body { margin: 0; padding: 0; }
+  body { font-family: 'Inter', system-ui, sans-serif; background: var(--bg); color: var(--text); -webkit-font-smoothing: antialiased; line-height: 1.6; }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 32px; }
+  nav.top { display: flex; justify-content: space-between; align-items: center; padding: 32px 0; border-bottom: 1px solid var(--line); }
+  .brand { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 26px; letter-spacing: 0.04em; }
+  .brand .gold { color: var(--gold); font-style: italic; }
+  .nav-links { display: flex; gap: 32px; font-size: 13px; letter-spacing: 0.06em; }
+  .nav-links a { color: var(--muted); text-decoration: none; transition: color .25s; }
+  .nav-links a:hover { color: var(--gold); }
+  .gold-btn { background: transparent; color: var(--gold); border: 1px solid var(--gold); padding: 11px 24px; border-radius: 0; font-size: 12px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; text-decoration: none; transition: background .3s, color .3s; }
+  .gold-btn:hover { background: var(--gold); color: var(--bg); }
+  .gold-btn.solid { background: var(--gold); color: var(--bg); }
+  .gold-btn.solid:hover { background: transparent; color: var(--gold); }
+  header.hero { padding: 140px 0 120px; text-align: center; position: relative; }
+  header.hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(60% 60% at 50% 30%, #d8b46c1a, transparent 70%); pointer-events: none; }
+  .eyebrow { position: relative; display: inline-block; font-size: 11px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--gold); margin-bottom: 32px; }
+  .eyebrow::before, .eyebrow::after { content: ''; display: inline-block; width: 30px; height: 1px; background: var(--gold); vertical-align: middle; margin: 0 14px; }
+  h1 { font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: clamp(50px, 8vw, 110px); line-height: 1.02; margin: 0 auto 28px; max-width: 980px; letter-spacing: -0.01em; }
+  h1 em { font-style: italic; color: var(--gold); font-weight: 300; }
+  .lede { font-size: 17px; color: var(--muted); max-width: 600px; margin: 0 auto 44px; line-height: 1.7; }
+  .hero-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; position: relative; }
+  .lux-photo { position: relative; max-width: 1100px; margin: 80px auto -20px; aspect-ratio: 21/9; overflow: hidden; border: 1px solid var(--line); }
+  .lux-photo img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.78) contrast(1.05); transition: transform 1s ease, filter .6s; display: block; }
+  .lux-photo:hover img { transform: scale(1.04); filter: brightness(0.9) contrast(1.05); }
+  .lux-photo::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(13,12,10,0.4) 0%, transparent 40%, rgba(13,12,10,0.7) 100%); pointer-events: none; }
+  .lux-photo .cap { position: absolute; bottom: 22px; left: 30px; right: 30px; font-family: 'Cormorant Garamond', serif; font-style: italic; color: var(--gold); font-size: 14px; letter-spacing: 0.2em; text-transform: uppercase; }
+  section { padding: 100px 0; border-top: 1px solid var(--line); }
+  .section-head { text-align: center; max-width: 720px; margin: 0 auto 80px; }
+  .section-head .tag { font-size: 11px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--gold); }
+  .section-head h2 { font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: clamp(36px, 5vw, 64px); margin: 18px 0 0; line-height: 1.05; }
+  .lux-rows { max-width: 880px; margin: 0 auto; }
+  .lux-row { display: grid; grid-template-columns: 80px 1fr; gap: 32px; padding: 36px 0; border-top: 1px solid var(--line); align-items: start; transition: padding .3s; }
+  .lux-row:last-child { border-bottom: 1px solid var(--line); }
+  .lux-row:hover { padding-left: 12px; }
+  .lux-num { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 36px; color: var(--gold); font-weight: 400; }
+  .lux-content h3 { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 28px; margin: 0 0 8px; }
+  .lux-content p { margin: 0; color: var(--muted); font-size: 16px; max-width: 600px; }
+  .cta-strip { text-align: center; padding: 100px 30px; background: radial-gradient(70% 100% at 50% 50%, #d8b46c1a, transparent 70%); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .cta-strip h3 { font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: clamp(36px, 5vw, 64px); margin: 0 0 18px; }
+  .cta-strip p { color: var(--muted); margin: 0 0 36px; font-size: 17px; }
+  .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, max-content)); gap: 36px; justify-content: center; margin-top: 36px; }
+  .contact-grid a, .contact-grid span { color: var(--text); text-decoration: none; font-size: 15px; letter-spacing: 0.02em; transition: color .25s; }
+  .contact-grid a:hover { color: var(--gold); }
+  footer.site-foot { padding: 40px 0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; font-size: 12px; color: var(--muted); letter-spacing: 0.04em; }
+  footer a { color: var(--gold); text-decoration: none; }
+  footer a:hover { color: var(--text); }
+
+.float-wa { position: fixed; bottom: 22px; right: 22px; width: 60px; height: 60px; border-radius: 50%; background: #25D366; color: #fff; display: grid; place-items: center; box-shadow: 0 12px 32px rgba(37,211,102,0.42); text-decoration: none; transition: transform .25s, box-shadow .25s; z-index: 9999; animation: waPulse 2.6s ease-in-out infinite; }
+.float-wa:hover { transform: scale(1.08); box-shadow: 0 16px 38px rgba(37,211,102,0.55); }
+.float-wa svg { width: 30px; height: 30px; }
+.float-wa .tip { position: absolute; right: calc(100% + 12px); top: 50%; transform: translateY(-50%); background: #0b0f15; color: #fff; padding: 8px 12px; border-radius: 10px; font-size: 12px; white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity .25s; font-family: 'Inter', system-ui, sans-serif; font-weight: 500; }
+.float-wa:hover .tip { opacity: 1; }
+@keyframes waPulse { 0%,100% { box-shadow: 0 12px 32px rgba(37,211,102,0.42), 0 0 0 0 rgba(37,211,102,0.45); } 50% { box-shadow: 0 12px 32px rgba(37,211,102,0.42), 0 0 0 18px rgba(37,211,102,0); } }
+@media (max-width: 480px) { .float-wa { width: 54px; height: 54px; bottom: 18px; right: 18px; } .float-wa svg { width: 26px; height: 26px; } .float-wa .tip { display: none; } }
+
+.brand { display: inline-flex; align-items: center; gap: 10px; }
+.brand-link { text-decoration: none; color: inherit; }
+.brand-logo { max-height: 84px; width: auto; display: block; object-fit: contain; }
+.footer-logo { max-height: 56px; width: auto; opacity: 0.95; vertical-align: middle; margin-right: 14px; display: inline-block; }
+@media (max-width: 760px) { .brand-logo { max-height: 64px; } .footer-logo { max-height: 44px; } }
+
+.footer-cta { padding: 60px 28px; text-align: center; max-width: 720px; margin: 0 auto 0; }
+.footer-cta h4 { font-size: clamp(22px, 3vw, 32px); font-weight: 600; margin: 0 0 10px; letter-spacing: -0.01em; }
+.footer-cta .sub { color: rgba(0,0,0,0.55); font-size: 15px; margin: 0 0 26px; }
+.footer-form { display: flex; flex-direction: column; gap: 12px; }
+.footer-form .ff-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+@media (max-width: 560px) { .footer-form .ff-row { grid-template-columns: 1fr; } }
+.footer-form .ff-input, .footer-form .ff-textarea { padding: 14px 16px; border-radius: 12px; border: 1px solid rgba(0,0,0,0.12); background: #fff; font: inherit; font-size: 15px; color: inherit; resize: vertical; min-height: auto; outline: 0; transition: border-color .2s, box-shadow .2s; }
+.footer-form .ff-input:focus, .footer-form .ff-textarea:focus { border-color: #25D366; box-shadow: 0 0 0 4px rgba(37,211,102,0.18); }
+.footer-form .ff-submit { padding: 14px 22px; background: #25D366; color: #0b0f15; border: 0; border-radius: 12px; font-weight: 700; font-size: 15px; cursor: pointer; transition: transform .2s, box-shadow .2s; }
+.footer-form .ff-submit:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(37,211,102,0.35); }
+/* Dark surface variant */
+.footer-cta.dark .sub { color: rgba(255,255,255,0.55); }
+.footer-cta.dark .ff-input, .footer-cta.dark .ff-textarea { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.12); color: #fff; }
+.footer-cta.dark .ff-input::placeholder, .footer-cta.dark .ff-textarea::placeholder { color: rgba(255,255,255,0.45); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="top">
+    <div class="brand"><img class="brand-logo" src="assets/logos/saba-nujoom-logo.png" alt="Saba Nujoom Saloon" /></div>
+    <div class="nav-links"><a href="#services">Services</a><a href="#contact">Contact</a></div>
+    <a href="#contact" class="gold-btn">Enquire</a>
+  </nav>
+  <header class="hero">
+    <span class="eyebrow">Gents Salon</span>
+    <h1>Sharper looks<em>.</em> Quieter rooms.</h1>
+    <p class="lede">Saba Nujoom Saloon is a neighbourhood gents salon in Ras Al Khaimah for haircuts, beard work, and grooming, done well and on time.</p>
+    <div class="hero-actions">
+      <a href="https://wa.me/971503723776?text=hello%2C%20i%20have%20seen%20your%20given%20website%2C%20i%27d%20like%20to%20talk%20more" class="gold-btn solid" target="_blank" rel="noopener">WhatsApp us</a>
+      <a href="#services" class="gold-btn">Discover</a>
+    </div>
+  </header>
+  <figure class="lux-photo">
+    <img src="https://images.pexels.com/photos/18991957/pexels-photo-18991957.jpeg?auto=compress&cs=tinysrgb&w=1600&h=900&fit=crop" alt="Saba Nujoom Saloon" loading="lazy" decoding="async" />
+    <div class="cap">Gents Salon &middot; Ras Al Khaimah, UAE</div>
+  </figure>
+</div>
+<section id="services">
+  <div class="wrap">
+    <div class="section-head"><div class="tag">The offering</div><h2>Discreet expertise. Considered detail.</h2></div>
+    <div class="lux-rows">
+      <div class="lux-row">
+        <div class="lux-num">01</div>
+        <div class="lux-content"><h3>Hair cutting & styling</h3><p>Modern and classic cuts, finished to your preference.</p></div>
+      </div>
+      <div class="lux-row">
+        <div class="lux-num">02</div>
+        <div class="lux-content"><h3>Beard sculpting</h3><p>Beard trims, lineups, and hot towel service.</p></div>
+      </div>
+      <div class="lux-row">
+        <div class="lux-num">03</div>
+        <div class="lux-content"><h3>Hair colour & treatment</h3><p>Colour, masks, and scalp treatments.</p></div>
+      </div>
+      <div class="lux-row">
+        <div class="lux-num">04</div>
+        <div class="lux-content"><h3>Walk in welcome</h3><p>Walk in any time or message ahead to skip the wait.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="cta-strip" id="contact">
+  <h3>Begin a conversation.</h3>
+  <p>Send us a message. We will reply with care and intent.</p>
+  <a href="https://wa.me/971503723776?text=hello%2C%20i%20have%20seen%20your%20given%20website%2C%20i%27d%20like%20to%20talk%20more" class="gold-btn solid" target="_blank" rel="noopener">Open WhatsApp</a>
+  <div class="contact-grid"><a href="tel:+971503723776">050 372 3776</a><span>Ras Al Khaimah, UAE</span></div>
+</div>
+<div class="wrap">
+  <section class="footer-cta dark">
+  <h4>Have a question?</h4>
+  <p class="sub">Drop a quick message. It opens WhatsApp with your details ready to send.</p>
+  <form class="footer-form" onsubmit="event.preventDefault();var n=this.querySelector('[name=cf_name]').value;var e=this.querySelector('[name=cf_email]').value;var m=this.querySelector('[name=cf_msg]').value;var t='Hello, this is '+n+' ('+e+'). '+m;window.open('https://wa.me/971503723776?text='+encodeURIComponent(t),'_blank');">
+  <div class="ff-row">
+    <input class="ff-input" type="text" name="cf_name" placeholder="Your name" required />
+    <input class="ff-input" type="email" name="cf_email" placeholder="Email address" required />
+  </div>
+  <textarea class="ff-textarea" name="cf_msg" placeholder="What can we help with?" rows="3" required></textarea>
+  <button class="ff-submit" type="submit">Send via WhatsApp</button>
+</form>
+</section>
+<footer class="site-foot">
+    <div><img class="footer-logo" src="assets/logos/saba-nujoom-logo.png" alt="" /> &copy; 2026 Saba Nujoom Saloon</div>
+    <div>Crafted by <a href="mailto:hello@quartermasters.me">Quartermasters F.Z.C</a></div>
+  </footer>
+</div>
+<a href="https://wa.me/971503723776?text=hello%2C%20i%20have%20seen%20your%20given%20website%2C%20i%27d%20like%20to%20talk%20more" class="float-wa" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><span class="tip">Chat on WhatsApp</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413"/></svg></a>
+<script>(function(){document.addEventListener('error',function(e){var t=e.target;if(t&&t.tagName==='IMG'&&!t.dataset.failed&&t.src.indexOf('picsum.photos')===-1){t.dataset.failed='1';t.src='https://picsum.photos/seed/saba-nujoom/1600/900';}},true);})();</script>
+</body>
+</html>

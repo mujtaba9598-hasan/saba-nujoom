@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Saba Nujoom Saloon | Choose your design</title>
+<meta name="description" content="Three landing page concepts for Saba Nujoom Saloon. Pick the one you prefer." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  body { margin: 0; font-family: 'Inter', system-ui, sans-serif; background: #f6f5f1; color: #11161c; -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 1240px; margin: 0 auto; padding: 56px 28px; }
+  h1 { font-size: clamp(32px, 4.4vw, 52px); font-weight: 800; letter-spacing: -0.02em; margin: 0 0 12px; }
+  .lede { color: #4a5562; font-size: 17px; max-width: 640px; margin: 0 0 48px; }
+  .grid { display: grid; gap: 22px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+  .card { background: white; border-radius: 22px; padding: 28px; box-shadow: 0 6px 24px rgba(31,35,48,0.06); transition: transform .3s, box-shadow .3s; display: flex; flex-direction: column; gap: 16px; }
+  .card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(31,35,48,0.12); }
+  .preview { aspect-ratio: 16/10; border-radius: 14px; position: relative; overflow: hidden; border: 1px solid #e9e4d8; }
+  .preview iframe { width: 200%; height: 200%; border: 0; transform: scale(0.5); transform-origin: 0 0; pointer-events: none; }
+  .tag { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #b8331f; }
+  .card h3 { margin: 0; font-size: 22px; font-weight: 700; }
+  .card p { margin: 0; color: #4a5562; font-size: 14px; flex: 1; }
+  .open { align-self: flex-start; background: #11161c; color: white; text-decoration: none; padding: 11px 20px; border-radius: 999px; font-size: 14px; font-weight: 600; transition: background .2s; }
+  .open:hover { background: #b8331f; }
+  .back { display: inline-block; color: #4a5562; text-decoration: none; font-size: 14px; margin-bottom: 28px; }
+  .back:hover { color: #11161c; }
+  .page-logo { height: 160px; width: auto; display: block; margin: 0 0 32px; object-fit: contain; }
+  .pitch-callout { background: #f0fbf4; border-left: 4px solid #25D366; padding: 22px 26px; border-radius: 14px; margin: 0 0 40px; max-width: 820px; }
+  .pitch-callout p { margin: 0 0 10px; font-size: 15px; line-height: 1.55; color: #1f2937; }
+  .pitch-callout p[dir="rtl"] { font-size: 16px; line-height: 1.7; font-family: 'Segoe UI', 'Tahoma', system-ui, sans-serif; }
+  .pitch-callout p[lang="hi"] { font-size: 15px; line-height: 1.7; font-family: 'Noto Sans Devanagari', 'Mangal', system-ui, sans-serif; }
+  .pitch-callout p:last-of-type { margin-bottom: 18px; }
+  .pitch-callout .wa-cta { display: inline-flex; align-items: center; gap: 10px; padding: 12px 22px; background: #25D366; color: #0b0f15; text-decoration: none; font-weight: 700; border-radius: 999px; font-size: 14px; transition: transform .2s, box-shadow .2s; }
+  .pitch-callout .wa-cta:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(37,211,102,0.4); }
+  .pitch-callout .wa-cta svg { width: 18px; height: 18px; fill: currentColor; }
+  footer { margin-top: 60px; padding-top: 28px; border-top: 1px solid #e9e4d8; font-size: 13px; color: #4a5562; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+  footer a { color: #11161c; text-decoration: none; border-bottom: 1px solid #11161c; }
+  footer a:hover { color: #b8331f; border-color: #b8331f; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  
+  <img class="page-logo" src="assets/logos/saba-nujoom-logo.png" alt="Saba Nujoom Saloon logo" />
+  <h1>Saba Nujoom Saloon</h1>
+  <p class="lede">Three different landing page concepts. Same content, different look and feel. Click any option to view the full page.</p>
+  <section class="pitch-callout">
+    <p>Pick any design below. If you like our work, send us a quick WhatsApp and we will build the full website for you.</p>
+    <p dir="rtl" lang="ar">اختر أي تصميم تراه أدناه. إذا أعجبك عملنا، راسلنا عبر واتساب وسنبني لك الموقع كاملاً.</p>
+    <p dir="rtl" lang="ur">نیچے کوئی بھی ڈیزائن منتخب کریں۔ اگر آپ کو ہمارا کام پسند آئے تو واٹس ایپ پر رابطہ کریں، ہم آپ کے لیے مکمل ویب سائٹ بنائیں گے۔</p>
+    <p lang="hi">नीचे कोई भी डिज़ाइन चुनें। अगर आपको हमारा काम पसंद आए तो व्हाट्सएप पर मैसेज करें, हम आपकी पूरी वेबसाइट बना देंगे।</p>
+    <a href="https://wa.me/971527529598?text=Hello%2C%20I%20have%20reviewed%20the%20design%20options%20for%20Saba%20Nujoom%20Saloon.%20I%20would%20like%20to%20discuss%20building%20the%20full%20website." class="wa-cta" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413"/></svg>
+      Chat on WhatsApp · +971 52 752 9598
+    </a>
+  </section>
+  <div class="grid">
+    <div class="card">
+      <div class="preview"><iframe src="option-1.html" loading="lazy"></iframe></div>
+      <span class="tag">Option 01</span>
+      <h3>Luxury Serif Dark</h3>
+      <p>Black canvas with gold accents and editorial serif typography. Premium and discreet.</p>
+      <a href="option-1.html" class="open">Open option 01 &rarr;</a>
+    </div>
+    <div class="card">
+      <div class="preview"><iframe src="option-2.html" loading="lazy"></iframe></div>
+      <span class="tag">Option 02</span>
+      <h3>Claymorphism Pastel</h3>
+      <p>Soft rounded surfaces with subtle inner and outer shadows. Approachable and human.</p>
+      <a href="option-2.html" class="open">Open option 02 &rarr;</a>
+    </div>
+    <div class="card">
+      <div class="preview"><iframe src="option-3.html" loading="lazy"></iframe></div>
+      <span class="tag">Option 03</span>
+      <h3>Aurora Gradient</h3>
+      <p>Animated gradient mesh on dark canvas. Bold, contemporary, attention grabbing.</p>
+      <a href="option-3.html" class="open">Open option 03 &rarr;</a>
+    </div>
+  </div>
+  <footer>
+    <div>&copy; 2026 Saba Nujoom Saloon. Concept previews.</div>
+    <div>Developed by <a href="mailto:hello@quartermasters.me">Quartermasters F.Z.C</a></div>
+  </footer>
+</div>
+</body>
+</html>
